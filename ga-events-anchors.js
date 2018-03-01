@@ -24,7 +24,7 @@ jQuery(document).ready(function($){
 				// try { pageTracker._trackEvent(eventCategory, text + ' - ' + pathName); } catch(err) { console.log(err) }
 				
 				// Tracking Script - Asynchronous (New)
-				// try { ga('send', 'event', 'Track Booking', pathName); } catch(err) { console.log(err) }
+				// try { ga('send', 'event', eventCategory, text + ' - ' + pathName); } catch(err) { console.log(err) }
 
 				// Testing
 				// console.log(eventCategory + ': ' + text + ' - ' + pathName);
@@ -32,12 +32,12 @@ jQuery(document).ready(function($){
 		}
 
 		// track (linked) phone numbers
-		checkLink('tel:', "Phone Number");
+		checkLink('tel:', 'Phone Number');
 
 		// track links to Request Appointment page
 		checkLink('request-appointment.php', 'Request Appointment');
 
 		// track links to Google Maps
-		checkLink('google.com/maps', "Google Maps");
+		checkLink('google.com/maps', 'Google Maps');
 	});
 });
